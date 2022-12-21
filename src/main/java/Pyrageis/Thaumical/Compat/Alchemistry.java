@@ -1,8 +1,5 @@
 package Pyrageis.Thaumical.Compat;
-
-//I give up on this one, if anyone figures out how the hell to get it working with Alchemistry Elements post an issue in the github
  
-import java.lang.reflect.*;
 import net.minecraft.item.*;
 import net.minecraft.block.*;
 import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
