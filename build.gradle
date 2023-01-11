@@ -42,17 +42,19 @@ minecraft {
 
 repositories {
     maven {
-        url "https://cursemaven.com"
+        url 'https://www.cursemaven.com'
+         content {
+             includeGroup "curse.maven"
+         }
     }
 }
 
 dependencies {
     minecraft 'net.minecraftforge:forge:1.12.2-14.23.5.2859'
-    
-	//runtimeOnly fg.deobf("curse.maven:name-PID:FID")
-	runtimeOnly fg.deobf("curse.maven:thaumcraft-223628:2629023")
-	runtimeOnly fg.deobf("curse.maven:thaumicAdditions-232564:3663195")
-	runtimeOnly fg.deobf("curse.maven:alchemistry-293425:3186612")
+    //runtimeOnly fg.deobf("curse.maven:name-PID:FID")
+	implementation "curse.maven:thaumcraft-223628:2629023"
+	implementation "curse.maven:thaumicAdditions-232564:3663195"
+	implementation "curse.maven:alchemistry-293425:3186612"
 
 }
 
